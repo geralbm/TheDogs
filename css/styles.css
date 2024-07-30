@@ -1,0 +1,276 @@
+/* Tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Maquetado que aplica a todas las paginas */
+ * {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body {
+    background-color:rgba(199, 189, 199, 0.749);
+    /* position: relative;
+    padding-bottom: 3em; */
+    min-width: 100vh; 
+}
+
+.header {
+    background: linear-gradient(to right, #C089D4 14%, #ADA3B1 25%, #C094D0 41%, #C6B3CD 55%, #807A83 73%);
+    border-top-left-radius:60px;
+    border-bottom-right-radius: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+    height: 75px;
+    padding: 5px;
+    border: 1.5px solid rgba(145, 140, 140, 0.704);
+}
+
+@media screen and (max-width:594px){
+    .header .nav-links{
+        flex-direction: column;
+        display: flex;
+        
+    }
+}
+.header .logo img {
+    height: 60px;
+    width: auto;
+    transition: all 0.3s;
+    border-radius: 40px;
+    border-radius: 65% 0%  65% 0% ;
+    border: 1px solid;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+
+.header span h1{
+    display: flex;
+    font-weight: bolder;
+    font-size: 2.813em;
+    color: #715d6c;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.header .nav-links li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.header .nav-links .btn{
+    font-weight: 700;
+    border: 1px solid rgba(109, 103, 103, 0.723);
+    border-radius: 50px;
+    padding: 9px 25px;
+    cursor: pointer;
+    background: linear-gradient(to right, #78A78B 49%, #34473C 92%, #18201B 100% );
+    color:rgba(255, 255, 255, 0.72);
+    font-size: 0.688em;
+    letter-spacing: 2px;
+}  
+
+.header .nav-links .btn:hover{
+    transform: scale(1.1);
+    color: rgb(65, 64, 66);
+    background: #9d3e7250;
+}
+
+/* Maquetacion Home - cuerpo de pagina */
+
+.cuerpo-texto h2{
+    color: rgb(109, 137, 121);
+    letter-spacing: 6px;
+    text-align: center;
+    font-size: 1.875em;
+    font-weight: 800px;
+    align-items:center;
+}
+
+
+.presentacion{
+    display: flex;
+    flex-direction: row;
+}
+
+.presentacion .cuerpo img{
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px rgba(31, 30, 30, 0.571) ;
+    border: 1px solid rgba(84, 81, 81, 0.477);
+    padding: 80 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+
+.presentacion .info-home{
+    padding: 80 10px;
+    margin: 50px 50px 10px 10px;
+    color: #370d29;
+    text-align: justify;
+    font-size: large;
+}
+
+/* Maquetacion Pagina => Agregar Amiguito */
+.cuerpo .form {
+    list-style: none;
+    text-align:center;
+    margin-bottom: 2%;
+  
+
+}
+
+.cuerpo h2{
+    color: #370d29;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25em;
+    margin: auto;
+}
+.cuerpo .form li label{
+    color: #370d29;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.938em;
+    
+}
+
+.cuerpo .form li input{
+    color: #9d3e73;
+    background-color: #dad0d0;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.938em;
+    border: none;
+}
+
+.cuerpo .form-agregar li label{
+    color: #370d29;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.938em;
+    
+}
+
+.cuerpo .form-agregar li input{
+    color: #3f0c28;
+    background-color: #dad0d0;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.625em;
+    
+}
+.cuerpo .form-agregar li select{
+    color: #3f0c28;
+    background-color: #dad0d0;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.938em;
+    
+}
+.cuerpo .form-agregar li select option{
+    color: #d01f80;
+    background-color: #dad0d0;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.938em;
+    
+}
+
+.cuerpo .btn-volver{
+    /* font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    padding: 9px 25px;
+    cursor: pointer;
+    background-color:#c6a5bb;
+    color: #7b7575;
+    font-size: 0.75em;
+    font-family: "Poppins", sans-serif ;
+    position:relative;
+    left: 45%; */
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    border: 1px solid rgba(109, 103, 103, 0.723);
+    border-radius: 50px;
+    padding: 9px 25px;
+    cursor: pointer;
+    background: linear-gradient(to right, #78A78B 49%, #34473C 92%, #18201B 100% );
+    color:rgba(255, 255, 255, 0.72);
+    font-size: 0.688em;
+    letter-spacing: 2px;
+}
+
+.cuerpo .btn-enviar{
+    /* font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    padding: 9px 25px;
+    cursor: pointer;
+    background-color:#c6a5bb;
+    color: #7b7575;
+    font-size: 0.75em;
+    font-family: "Poppins", sans-serif ;
+    position:relative;
+    left: 40%; */
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    border: 1px solid rgba(109, 103, 103, 0.723);
+    border-radius: 50px;
+    padding: 9px 25px;
+    cursor: pointer;
+    background: linear-gradient(to right, #78A78B 49%, #34473C 92%, #18201B 100% );
+    color:rgba(255, 255, 255, 0.72);
+    font-size: 0.688em;
+    letter-spacing: 2px;
+}
+
+
+
+/* Maquetado Pie de Pagina - Footer - Macro a todo el sitio */
+
+.pie-pagina{
+    background: linear-gradient(to right,#18201B 0%, #34473C 28%, #76a689 49% );
+    border-style: ridge;
+    border: 1px solid rgba(109, 103, 103, 0.723);
+    /* position:absolute; */
+    /* bottom: 0; */
+    /* display:flex; */
+    flex-wrap: wrap;
+    width: 100%;
+    height: 3.125rem;
+    justify-content:center;
+    gap: 1.875rem;
+    padding: auto;
+    
+}
+
+.pie-pagina .grupo-1{
+    display:flex;
+    justify-content:space-between;
+    margin: 0px 10px; 
+    padding:5px 0px;
+}
+
+.pie-pagina .grupo-1 .box h4{
+    color: white;
+    font-size: 0.75em; 
+    letter-spacing: 2px;
+}
+
+.pie-pagina .grupo-1 .contacto a{
+    color: rgba(146, 109, 205, 0.906);
+    
+}
+
+.pie-pagina .grupo-1 .noticias a{
+    color: rgba(219, 202, 13, 0.579);
+
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    color: rgb(185, 22, 11);
+
+}
